@@ -22,7 +22,7 @@
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Products</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#choose">Why Choose Us</a></li>
                 <li><a href="#business">Business Details</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -31,7 +31,7 @@
 
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="overlay"></div>
 
         <div class="home-content">
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="left"><img src="images/about-us.png" alt=""></div>
         <div class="right">
             <h3 class="section-heading">ABOUT US</h3>
@@ -76,7 +76,8 @@
                 partnerships.</p>
         </div>
     </section>
-    <section class="products">
+
+    <section class="products" id="products">
         <h3>OUR PRODUCT CATEGORIES</h3>
         <div class="title-divider">
             <span>❖</span>
@@ -141,7 +142,8 @@
         </div>
 
     </section>
-    <section class="why-choose">
+
+    <section class="why-choose" id="choose">
         <h3>WHY CHOOSE NISHMI CREATIONS</h3>
         <div class="title-divider">
             <span>❖</span>
@@ -201,7 +203,8 @@
             </div>
         </div>
     </section>
-    <section class="bussiness-details">
+
+    <section class="bussiness-details" id="business">
         <h3>BUSSINESS DETAILS</h3>
         <div class="title-divider">
             <span>❖</span>
@@ -258,7 +261,8 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+
+    <section class="contact-us" id="contact">
         <div class="left-contact">
             <h3>CONTACT US</h3>
             <div class="underline">
@@ -288,24 +292,31 @@
             </div>
         </div>
         <div class="right-contact">
-               <div class="input-box">
-                 <input type="text" placeholder="Your Name">
-               </div>
-               <div class="input-box">
-                 <input type="text" placeholder="Your Name">
-               </div>
-               <div class="input-msg">
-                 <textarea type="text"  placeholder="Write Your Message ..." rows="5"></textarea>
-               </div>
-               <button>SEND MESSAGE</button>
+            <div class="input-box" id="input-1">
+                <input type="text" placeholder="">
+                <label for="name">Your name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="">
+                <label for="name">E-mail</label>
+            </div>
+            <div class="input-box">
+                <textarea type="text" placeholder="" rows="6"></textarea>
+                <label for="msg">Write Your Message</label>
+            </div>
+            <button>SEND MESSAGE</button>
         </div>
     </section>
+
     <footer class="footer">
-         <img src="images/footer-img-1.png" alt="">
-         <div class="foot-text">
-             <h2>NISHMI CREATIONS</h2>
-             <P>Tranform Tradition Into Modern Inovation</P>
-         </div>
-         <img src="images/footer-img-2.png" alt="">
+        <img src="images/footer-img-1.png" alt="">
+        <div class="foot-text">
+            <h2>NISHMI CREATIONS</h2>
+            <P>Tranform Tradition Into Modern Inovation</P>
+        </div>
+        <img src="images/footer-img-2.png" alt="">
     </footer>
+    
+    <script src="main.js"></script>
 </body>
+
