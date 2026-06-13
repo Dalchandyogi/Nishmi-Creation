@@ -1,4 +1,3 @@
-<script>
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-menu a");
 
@@ -22,4 +21,3 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-</script>
