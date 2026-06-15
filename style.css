@@ -210,10 +210,10 @@ body {
   display: flex;
   margin-left: 8%;
   margin-top: 3%;
+  padding-top: 3rem;
   margin-bottom: 2%;
   justify-content: space-between;
   /* background-color: var(--accent-light); */
-  padding-top: 3rem;
 }
 .about .left {
   width: 45%;
@@ -275,6 +275,8 @@ body {
 .products {
   padding: 0px 8%;
   margin-bottom: 20px;
+    margin-top: 3%;
+  padding-top: 3rem;
 }
 
 .products h3 {
@@ -325,15 +327,15 @@ body {
   height: 200px;
 }
 .icon-circle {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #dfd6d2;
 
   border-radius: 50%;
 
   position: absolute;
   left: 50%;
-  bottom: 160px;
+  bottom: 175px;
 
   transform: translateX(-50%);
 
@@ -345,6 +347,11 @@ body {
 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+
+.icon-circle i {
+  font-size: 18px;
+  /* padding: 10px; */
+}
 .icon-circle img {
   width: 40px;
   height: 40px;
@@ -352,17 +359,20 @@ body {
 }
 .product-details h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 18px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Roboto", sans-serif;
 }
 .product-details p {
   line-height: 1.5rem;
   text-align: center;
   padding: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .why-choose {
   margin-bottom: 40px;
+    margin-top: 3%;
+  padding-top: 3rem;
   /* background-color: #f9f0e2; */
 }
 .why-choose h3 {
@@ -383,7 +393,7 @@ body {
 .box {
   display: flex;
   width: 300px;
-  border-right: 2px solid var(--divider-color);
+  border-right: 2px solid var(--accent-primary);
 }
 .box img {
   height: 80px;
@@ -411,6 +421,8 @@ body {
 .bussiness-details {
   margin: 0px 8%;
   margin-bottom: 50px;
+    margin-top: 3%;
+  padding-top: 3rem;
 }
 .bussiness-details h3 {
   text-align: center;
@@ -435,11 +447,13 @@ body {
   align-items: center;
   padding: 5px;
 }
-.first-detail img {
+.first-detail i{
   height: 28px;
   width: 33px;
   margin-left: 30px;
   margin-right: 20px;
+  color: var(--text-secondary);
+  font-size: 25px;
 }
 .first-detail .headings {
   /* margin-right: 130px;
@@ -463,6 +477,7 @@ body {
 .contact-us {
   margin: 0px 8%;
   display: flex;
+    margin-top: 3%;
 }
 .left-contact {
   width: 50%;
@@ -507,11 +522,13 @@ body {
   margin-left: 10px;
   font-family: "Roboto", sans-serif;
   width: 30%;
+  cursor: pointer;
 }
 .info p {
   width: 60%;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  cursor: pointer;
 }
 .right-contact {
   display: flex;
@@ -531,17 +548,18 @@ body {
 .input-box input {
   width: 100%;
   padding: 14px 12px;
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--text-secondary);
   border-radius: 4px;
   outline: none;
   font-size: 16px;
+  background: none;
   /* font-family:"Roboto", sans-serif ; */
 }
 .input-box label {
   position: absolute;
   left: 12px;
   top: 14px;
-  background: #fff;
+  /* background: linear-gradient(135deg, #f8f1e8 0%, #f3e7d8 40%, #e8d2bc 100%); */
   padding: 0 4px;
   color: #777;
   font-size: 16px;
@@ -554,6 +572,7 @@ body {
   top: -8px;
   font-size: 12px;
   color: var(--text-secondary);
+  background: #EDDBC8;
 }
 .input-box textarea {
   width: 100%;
@@ -562,16 +581,18 @@ body {
   /* padding-bottom: 80px; */
   padding-top: 10px;
   padding-left: 10px;
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--text-secondary);
   outline: none;
   font-family: "Roboto", sans-serif;
   resize: none;
+  background: none;
 }
 .input-box textarea:focus + label,
 .input-box textarea:not(:placeholder-shown) + label {
   top: -8px;
   font-size: 12px;
   color: var(--text-secondary);
+  background: #EDDBC8;
 }
 
 .right-contact button {
