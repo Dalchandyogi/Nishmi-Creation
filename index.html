@@ -7,7 +7,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive-overlay.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <title>Nishmi Creations</title>
@@ -16,9 +17,14 @@
 <body>
     <header class="nav">
         <div class="nav-logo">
-            <img src="images/logo-5.png" alt="Nishmi Creations Logo">
+            <img src="assets/images/logo-5.png" alt="Nishmi Creations Logo">
         </div>
-        <nav class="nav-menu">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -62,7 +68,7 @@
     </section>
 
     <section class="about" id="about">
-        <div class="left"><img src="images/about-us.png" alt=""></div>
+        <div class="left"><img src="assets/images/about-us.png" alt=""></div>
         <div class="right">
             <h3 class="section-heading">ABOUT US</h3>
             <p>Nishmi Creations is a MSME-registered trading enterprise based in Jaipur, Rajasthan, dedicated to
@@ -85,7 +91,7 @@
         <div class="cards">
 
             <div class="product-card">
-                <img src="images/product-card1.png" alt="">
+                <img src="assets/images/product-card1.png" alt="">
                 <div class="icon-circle">
                     <!-- <img src="images/ho-fun.png" alt="Furniture Icon"> -->
                     <i class="fa-solid fa-house"></i>
@@ -101,9 +107,9 @@
             </div>
 
             <div class="product-card">
-                <img src="images/product-card1.png" alt="">
+                <img src="assets/images/product-card1.png" alt="">
                 <div class="icon-circle">
-                    <!-- <img src="images/ho-fun.png" alt="Furniture Icon"> -->
+                    <!-- <img src="assets/images/ho-fun.png" alt="Furniture Icon"> -->
                     <i class="fa-solid fa-chair"></i>
                 </div>
                 <div class="product-details">
@@ -118,9 +124,9 @@
             </div>
             
             <div class="product-card">
-                <img src="images/product-card1.png" alt="">
+                <img src="assets/images/product-card1.png" alt="">
                 <div class="icon-circle">
-                    <!-- <img src="images/ho-fun.png" alt="Furniture Icon"> -->
+                    <!-- <img src="assets/images/ho-fun.png" alt="Furniture Icon"> -->
                     <i class="fa-solid fa-lightbulb"></i>
 
                 </div>
@@ -134,7 +140,7 @@
                 </div>
             </div>
             <div class="product-card">
-                <img src="images/product-card1.png" alt="">
+                <img src="assets/images/product-card1.png" alt="">
                 <div class="icon-circle">
                     <i class="fa-solid fa-paint-roller"></i>
                 </div>
@@ -162,7 +168,7 @@
         </div>
         <div class="info-boxs">
             <div class="box">
-                <img src="images/security-img-2.png" alt="">
+                <img src="assets/images/security-img-2.png" alt="">
                 <div class="box-details">
                     <h2>Quality Assured</h2>
                     <p>
@@ -174,7 +180,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="images/why-choose-1-img.png" alt="">
+                <img src="assets/images/why-choose-1-img.png" alt="">
                 <div class="box-details">
                     <h2>MSME Registered</h2>
                     <p>
@@ -187,7 +193,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="images/why-choose-2-img.png" alt="">
+                <img src="assets/images/why-choose-2-img.png" alt="">
                 <div class="box-details">
                     <h2>GST Compliant</h2>
                     <p>
@@ -201,7 +207,7 @@
                 </div>
             </div>
             <div class="box" id="last-box">
-                <img src="images/why-choose-3-img.png" alt="">
+                <img src="assets/images/why-choose-3-img.png" alt="">
                 <div class="box-details">
                     <h2>Jaipur Heritage</h2>
                     <p>
@@ -322,13 +328,13 @@
     </section>
 
     <footer class="footer">
-        <img src="images/footer-img-1.png" alt="">
+            <img src="assets/images/footer-img-1.png" alt="">
         <div class="foot-text">
             <h2>NISHMI CREATIONS</h2>
             <P>Tranform Tradition Into Modern Inovation</P>
         </div>
-        <img src="images/footer-img-2.png" alt="">
+        <img src="assets/images/footer-img-2.png" alt="">
     </footer>
 
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>

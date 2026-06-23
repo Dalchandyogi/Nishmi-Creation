@@ -119,7 +119,7 @@ body {
   width: 100%;
   height: calc(100vh - 95px);
 
-  background: url("images/home.png");
+  background: url("../images/home.png");
 
   background-size: cover;
   background-position: center;
@@ -223,7 +223,7 @@ body {
 }
 .right {
   width: 60%;
-  background-image: url(images/about-text-bg.png);
+  background-image: url("../images/about-text-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
