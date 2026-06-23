@@ -350,6 +350,7 @@ body {
 
 .icon-circle i {
   font-size: 18px;
+  color: var(--text-secondary);
   /* padding: 10px; */
 }
 .icon-circle img {
