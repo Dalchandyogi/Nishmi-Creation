@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "id": "home-furnishing",
+      "title": "Home Furnishing",
+      "description": "Premium curtains, bedsheets, cushion covers, table runners and more.",
+      "products": [
+        {
+          "id": 1,
+          "name": "Premium Silk Curtains",
+          "image": "assets/products/NCC-034.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Floral Cotton Bedsheet",
+          "image": "assets/products/NCC-038.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Designer Cushion Cover",
+          "image": "assets/products/NCC-039.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/NCC-041.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/NCC-043.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/runner-1.jpg"
+        }
+      ]
+    },
+
+    {
+      "id": "wooden-furniture",
+      "title": "Wooden Furniture",
+      "description": "Elegant handcrafted furniture for homes and offices.",
+      "products": [
+        {
+          "id": 5,
+          "name": "Wooden Dining Table",
+          "image": "assets/products/furniture-1.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Wooden Sofa Set",
+          "image": "assets/products/furniture-2.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Storage Cabinet",
+          "image": "assets/products/furniture-3.jpg"
+        }
+      ]
+    },
+
+    {
+      "id": "home-decor",
+      "title": "Home Decor",
+      "description": "Decorative items that enhance interior beauty.",
+      "products": [
+        {
+          "id": 8,
+          "name": "Decorative Vase",
+          "image": "assets/products/decor-1.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Wall Hanging",
+          "image": "assets/products/decor-2.jpg"
+        }
+      ]
+    },
+
+    {
+      "id": "wooden-artifacts",
+      "title": "Wooden Artifacts & Handicrafts",
+      "description": "Traditional handcrafted wooden artifacts.",
+      "products": [
+        {
+          "id": 10,
+          "name": "Wooden Elephant",
+          "image": "assets/products/artifact-1.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Handcrafted Sculpture",
+          "image": "assets/products/artifact-2.jpg"
+        }
+      ]
+    }
+  ]
+}

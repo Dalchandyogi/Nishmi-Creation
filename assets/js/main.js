@@ -152,3 +152,40 @@ window.addEventListener("load", () => {
     hamburger.classList.remove("active");
   }
 });
+
+
+async function loadProducts() {
+    const params = new URLSearchParams(window.location.search);
+    const categoryId = params.get("category");
+
+    const response = await fetch("../assets/data/products.json");
+    const data = await response.json();
+
+    const category = data.categories.find(
+        cat => cat.id === categoryId
+    );
+
+    if (!category) {
+        document.getElementById("productsGrid").innerHTML =
+            "<h2>No Products Found</h2>";
+        return;
+    }
+
+    document.getElementById("categoryTitle").textContent =
+        category.title;
+
+    const productsGrid =
+        document.getElementById("productsGrid");
+
+    productsGrid.innerHTML = category.products
+        .map(product => `
+            <div class="product-card">
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <button>Enquire Now</button>
+            </div>
+        `)
+        .join("");
+}
+
+loadProducts();

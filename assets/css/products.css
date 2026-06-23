@@ -1,0 +1,292 @@
+/* ========================================
+   PRODUCTS PAGE STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f1ed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Decorative background element */
+body::before {
+    content: '';
+    position: fixed;
+    top: -10%;
+    right: -5%;
+    width: 500px;
+    height: 500px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23e8dfd0" d="M150,50 Q160,80 150,110 Q140,130 120,140 Q100,145 80,140 Q70,135 75,115 Q80,95 95,85 Q110,75 130,70 Q145,65 150,50Z"/><path fill="%23e8dfd0" d="M160,100 Q170,120 160,140 Q150,160 130,165 Q110,170 90,160 Q80,155 85,135 Q90,120 105,110 Q120,100 140,98 Q155,97 160,100Z"/></svg>') no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.products-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ========================================
+   BACK BUTTON
+   ======================================== */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    margin-bottom: 40px;
+    background-color: transparent;
+    color: #333;
+    text-decoration: none;
+    border-radius: 0;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    color: #d4af37;
+}
+
+.back-btn i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+.page-header {
+    text-align: left;
+    padding: 30px 0;
+    background: transparent;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e0d5c8;
+    padding-bottom: 30px;
+}
+
+.category-tag {
+    display: none;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.page-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #d4af37;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #666;
+    max-width: 600px;
+    margin: 30px 0 0 0;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* ========================================
+   PRODUCTS GRID
+   ======================================== */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0;
+}
+
+.product-item {
+    background: transparent;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+}
+
+.product-item:hover .product-image {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+    width: 100%;
+    /* height: 280px; */
+    object-fit: cover;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.product-info p {
+    display: none;
+}
+
+.enquire-btn {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 1px solid #2c3e50;
+    padding: 10px 30px;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.enquire-btn:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.enquire-btn i {
+    font-size: 14px;
+}
+
+/* ========================================
+   EMPTY STATE
+   ======================================== */
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    grid-column: 1 / -1;
+}
+
+.empty-state p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+    body::before {
+        width: 300px;
+        height: 300px;
+        right: 0;
+        top: 0;
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-page {
+        padding: 20px 15px;
+    }
+
+    .page-header {
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .page-header h1::after {
+        bottom: -12px;
+        width: 40px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .back-btn {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+}
