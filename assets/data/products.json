@@ -34,7 +34,33 @@
           "id": 4,
           "name": "Luxury Table Runner",
           "image": "assets/products/runner-1.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Floral Cotton Bedsheet",
+          "image": "assets/products/NCC-038.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Designer Cushion Cover",
+          "image": "assets/products/NCC-039.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/NCC-041.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/NCC-043.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Luxury Table Runner",
+          "image": "assets/products/runner-1.jpg"
         }
+
       ]
     },
 
@@ -46,17 +72,47 @@
         {
           "id": 5,
           "name": "Wooden Dining Table",
-          "image": "assets/products/furniture-1.jpg"
+          "image": "assets/products/NCC-084.JPG"
         },
         {
           "id": 6,
           "name": "Wooden Sofa Set",
-          "image": "assets/products/furniture-2.jpg"
+          "image": "assets/products/NCC-054.JPG"
         },
         {
           "id": 7,
           "name": "Storage Cabinet",
-          "image": "assets/products/furniture-3.jpg"
+          "image": "assets/products/NCC-058.JPG"
+        },
+        {
+          "id": 5,
+          "name": "Wooden Dining Table",
+          "image": "assets/products/NCC-092.JPG"
+        },
+        {
+          "id": 6,
+          "name": "Wooden Sofa Set",
+          "image": "assets/products/NCC-070.JPG"
+        },
+        {
+          "id": 7,
+          "name": "Storage Cabinet",
+          "image": "assets/products/NCC-075.JPG"
+        },
+        {
+          "id": 5,
+          "name": "Wooden Dining Table",
+          "image": "assets/products/NCC-084.JPG"
+        },
+        {
+          "id": 6,
+          "name": "Wooden Sofa Set",
+          "image": "assets/products/NCC-085.JPG"
+        },
+        {
+          "id": 7,
+          "name": "Storage Cabinet",
+          "image": "assets/products/NCC-092.JPG"
         }
       ]
     },
@@ -69,12 +125,42 @@
         {
           "id": 8,
           "name": "Decorative Vase",
-          "image": "assets/products/decor-1.jpg"
+          "image": "assets/products/NCC-124.JPG"
         },
         {
           "id": 9,
           "name": "Wall Hanging",
-          "image": "assets/products/decor-2.jpg"
+          "image": "assets/products/NCC-165.JPG"
+        },
+        {
+          "id": 8,
+          "name": "Decorative Vase",
+          "image": "assets/products/NCC-110.JPG"
+        },
+        {
+          "id": 9,
+          "name": "Wall Hanging",
+          "image": "assets/products/NCC-058.JPG"
+        },
+        {
+          "id": 8,
+          "name": "Decorative Vase",
+          "image": "assets/products/NCC-063.JPG"
+        },
+        {
+          "id": 9,
+          "name": "Wall Hanging",
+          "image": "assets/products/NCC-164.JPG"
+        },
+        {
+          "id": 8,
+          "name": "Decorative Vase",
+          "image": "assets/products/NCC-100.JPG"
+        },
+        {
+          "id": 9,
+          "name": "Wall Hanging",
+          "image": "assets/products/NCC-043.JPG"
         }
       ]
     },
@@ -87,12 +173,32 @@
         {
           "id": 10,
           "name": "Wooden Elephant",
-          "image": "assets/products/artifact-1.jpg"
+          "image": "assets/products/NCC-125.JPG"
         },
         {
           "id": 11,
           "name": "Handcrafted Sculpture",
-          "image": "assets/products/artifact-2.jpg"
+          "image": "assets/products/NCC-144.JPG"
+        },
+        {
+          "id": 10,
+          "name": "Wooden Elephant",
+          "image": "assets/products/NCC-157.JPG"
+        },
+        {
+          "id": 11,
+          "name": "Handcrafted Sculpture",
+          "image": "assets/products/NCC-102.JPG"
+        },
+        {
+          "id": 10,
+          "name": "Wooden Elephant",
+          "image": "assets/products/NCC-084.JPG"
+        },
+        {
+          "id": 11,
+          "name": "Handcrafted Sculpture",
+          "image": "assets/products/NCC-092.JPG"
         }
       ]
     }

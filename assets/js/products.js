@@ -1,6 +1,7 @@
 /* ========================================
    PRODUCTS PAGE - DYNAMIC PRODUCT LOADING
    ======================================== */
+   
 
 /**
  * Get URL parameter value
@@ -60,9 +61,10 @@ function renderProducts(products) {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.description || 'Premium quality product'}</p>
-                <button class="enquire-btn" onclick="enquireProduct('${product.id || ''}', '${product.name}')">
-                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
-                </button>
+
+                <div class="enquire-btn" onclick="enquireProduct('${product.id || ''}', '${product.name}')">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
             </div>
         </div>
     `;
@@ -138,3 +140,8 @@ async function initProductsPage() {
 
 // Initialize page when DOM is loaded
 document.addEventListener('DOMContentLoaded', initProductsPage);
+
+
+
+
+                
