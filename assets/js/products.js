@@ -23,7 +23,7 @@ async function loadProducts() {
         const response = await fetch(basePath + 'assets/data/products.json');
 
         console.log('Fetching products data from:', basePath + 'assets/data/products.json');
-        
+
         if (!response.ok) {
             throw new Error('Failed to load products data');
         }
@@ -51,17 +51,15 @@ function renderProducts(products) {
     }
 
     productsGrid.innerHTML = products.map(product => {
-        // Adjust image path from JSON context (root-relative) to products.html context
-        const imagePath = product.image 
-            ? `../../${product.image}`
-            : '../../assets/images/product-card1.png';
+        // Use image path directly from JSON - base tag handles path resolution
+        const imagePath = product.image || 'assets/images/product-card1.png';
         
         return `
         <div class="product-item">
             <img src="${imagePath}" 
                  alt="${product.name}" 
                  class="product-image"
-                 onerror="this.src='../../assets/images/product-card1.png'">
+                 onerror="this.src='assets/images/product-card1.png'">
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.description || 'Premium quality product'}</p>
