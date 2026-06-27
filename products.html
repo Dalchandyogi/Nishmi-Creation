@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     
-    <!-- Base URL Configuration for GitHub Pages -->
+    <!-- Base URL for GitHub Pages -->
     <script>
-        window.BASE_PATH = window.location.hostname.includes('github.io') ? '/Nishmi-Creation/' : '/';
-        if (window.BASE_PATH !== '/') {
-            var base = document.createElement('base');
-            base.href = window.BASE_PATH;
-            document.head.insertBefore(base, document.head.firstChild);
+        if (window.location.hostname.includes('github.io')) {
+            document.write('<base href="/Nishmi-Creation/">');
         }
     </script>
 
