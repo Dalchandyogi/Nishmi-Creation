@@ -19,7 +19,11 @@ function getUrlParam(param) {
  */
 async function loadProducts() {
     try {
-        const response = await fetch('assets/data/products.json');
+        const basePath = window.BASE_PATH || '/';
+        const response = await fetch(basePath + 'assets/data/products.json');
+
+        console.log('Fetching products data from:', basePath + 'assets/data/products.json');
+        
         if (!response.ok) {
             throw new Error('Failed to load products data');
         }

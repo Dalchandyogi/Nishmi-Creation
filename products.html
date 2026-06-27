@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     
+    <!-- Base URL Configuration for GitHub Pages -->
     <script>
-        // Set base URL for GitHub Pages compatibility
-        const isGitHubPages = window.location.hostname.includes('github.io');
-        const basePath = isGitHubPages ? '/Nishmi-Creation/' : '/';
-        document.write('<base href="' + basePath + '">');
+        window.BASE_PATH = window.location.hostname.includes('github.io') ? '/Nishmi-Creation/' : '/';
+        if (window.BASE_PATH !== '/') {
+            var base = document.createElement('base');
+            base.href = window.BASE_PATH;
+            document.head.insertBefore(base, document.head.firstChild);
+        }
     </script>
 
     <link rel="stylesheet" href="assets/css/products.css">
