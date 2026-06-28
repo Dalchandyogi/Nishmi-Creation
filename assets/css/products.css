@@ -90,6 +90,10 @@ body::before {
     font-weight: 700;
     font-size: 18px;
     border: none;
+    
+}
+
+.back-icon{
     cursor: pointer;
 }
 
