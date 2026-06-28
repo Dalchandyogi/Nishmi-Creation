@@ -58,6 +58,7 @@ const productLinks = document.querySelectorAll(".product-link");
 
 function showLoader() {
   if (pageLoader) {
+    pageLoader.style.display = "flex";
     pageLoader.classList.add("active");
   }
 }
@@ -68,6 +69,9 @@ function hideLoader() {
     pageLoader.style.display = "none";
   }
 }
+
+// Ensure loader is always hidden immediately on script execution
+hideLoader();
 
 productLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
@@ -85,7 +89,11 @@ productLinks.forEach((link) => {
 window.addEventListener("DOMContentLoaded", hideLoader);
 window.addEventListener("load", hideLoader);
 window.addEventListener("pageshow", hideLoader);
-window.addEventListener("pagehide", hideLoader);
+window.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    hideLoader();
+  }
+});
 window.addEventListener("beforeunload", hideLoader);
 
 // Close menu when clicking outside of it
