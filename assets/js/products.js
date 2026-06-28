@@ -64,7 +64,7 @@ function renderProducts(products) {
                 <h3>${product.name}</h3>
                 <p>${product.description || 'Premium quality product'}</p>
 
-                <div class="enquire-btn" onclick="enquireProduct('${product.id || ''}', '${product.name}')">
+                <div class="enquire-btn" onclick="enquireProduct('${product.id || ''}', '${product.name}', '${imagePath}')">
                     <i class="bi bi-arrow-up-right"></i>
                 </div>
             </div>
@@ -96,11 +96,23 @@ function updatePageHeader(category, categoryData) {
  * @param {string} productId - ID of the product
  * @param {string} productName - Name of the product
  */
-function enquireProduct(productId, productName) {
-    // Could be connected to a contact form or modal
-    console.log(`Enquiry for: ${productName} (ID: ${productId})`);
-    alert(`Thank you for your interest in ${productName}!\n\nPlease contact us for more information.`);
-    // TODO: Implement actual enquiry functionality (e.g., scroll to contact form, open modal)
+function enquireProduct(productId, productName, imagePath) {
+    const emailAddress = 'nishmicreations@gmail.com';
+    const subject = `Enquire for ${productName}`;
+    const productUrl = imagePath ? new URL(imagePath, document.baseURI).href : '';
+    const bodyLines = [
+        `Hello,`,
+        ``,
+        `I would like to enquire about the product: ${productName}.`,
+        ``,
+        productUrl ? `Product image: ${productUrl}` : '',
+        ``,
+        `Please let me know the next steps.`,
+    ].filter(Boolean);
+    const body = bodyLines.join('\n');
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailUrl, '_blank');
 }
 
 /**
