@@ -62,6 +62,13 @@ function showLoader() {
   }
 }
 
+function hideLoader() {
+  if (pageLoader) {
+    pageLoader.classList.remove("active");
+    pageLoader.style.display = "none";
+  }
+}
+
 productLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
@@ -74,6 +81,12 @@ productLinks.forEach((link) => {
     }
   });
 });
+
+window.addEventListener("DOMContentLoaded", hideLoader);
+window.addEventListener("load", hideLoader);
+window.addEventListener("pageshow", hideLoader);
+window.addEventListener("pagehide", hideLoader);
+window.addEventListener("beforeunload", hideLoader);
 
 // Close menu when clicking outside of it
 document.addEventListener("click", (event) => {
