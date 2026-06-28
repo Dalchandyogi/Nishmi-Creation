@@ -335,6 +335,39 @@ body {
   transition: transform 0.3s ease;
 }
 
+#page-loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.96);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+#page-loader.active {
+  display: flex;
+}
+
+.loader {
+  width: 72px;
+  height: 72px;
+  border: 8px solid rgba(134, 100, 60, 0.18);
+  border-top-color: #a65a32;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .product-card:hover {
   transform: translateY(-5px);
 }

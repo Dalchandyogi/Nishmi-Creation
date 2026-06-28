@@ -29,7 +29,7 @@ function closeMenu() {
 navLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
-    if (href.startsWith("#")) {
+    if (href && href.startsWith("#")) {
       e.preventDefault();
       closeMenu();
       setTimeout(() => {
@@ -43,12 +43,36 @@ navLinks.forEach((link) => {
     }
   });
 });
+
 // Add click event to hamburger button
 hamburger.addEventListener("click", toggleMenu);
 
 // Close menu when a nav link is clicked
 navLinks.forEach((link) => {
   link.addEventListener("click", closeMenu);
+});
+
+// Show full-screen loader when clicking product category cards
+const pageLoader = document.getElementById("page-loader");
+const productLinks = document.querySelectorAll(".product-link");
+
+function showLoader() {
+  if (pageLoader) {
+    pageLoader.classList.add("active");
+  }
+}
+
+productLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    const href = this.getAttribute("href");
+    if (href) {
+      e.preventDefault();
+      showLoader();
+      setTimeout(() => {
+        window.location.href = href;
+      }, 150);
+    }
+  });
 });
 
 // Close menu when clicking outside of it
