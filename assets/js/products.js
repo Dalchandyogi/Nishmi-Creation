@@ -50,7 +50,10 @@ function renderProducts(products) {
     productsGrid.innerHTML = products.map(product => {
         // Use image path directly from JSON - base tag handles path resolution
         const imagePath = product.image || 'assets/images/product-card1.png';
+
+        console.log(imagePath);
         
+    
         return `
         <div class="product-item">
             <img src="${imagePath}" 
@@ -117,6 +120,7 @@ async function initProductsPage() {
 
     // Load products data
     const data = await loadProducts();
+    
     
     // Find category data
     const categoryData = data.categories?.find(
